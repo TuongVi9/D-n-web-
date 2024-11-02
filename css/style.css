@@ -1,0 +1,1401 @@
+
+.ads{
+    text-align: center;
+    margin-top: 200px;
+    font-family: 'Franklin Gothic Medium' 'Arial Narrow', Arial, sans-serif;
+    text-decoration: dotted; text-align: center;
+}
+@keyframes spin{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+.loading{
+    border-radius: 50%;
+    border: 16px double rgb(126, 121, 121);
+    border-bottom: 16px solid rgb(58, 53, 53);
+    animation: spin 2s linear infinite;
+    height: 120px;
+    width: 120px;
+    align-self: center;
+    left: 45.5%;
+    position: absolute;
+    
+}
+.ads{
+  display: none;
+}
+/* -------------------------------------------trangweb---------------------------------------- */
+header{   
+    position: sticky;   
+    top: 0;
+    z-index: 100;
+    margin-bottom: 10px;
+    box-shadow: 0px 5px 15px rgba(0,0,0, 0.5);
+    background:white;
+}
+.header .container{
+    padding: 10px;  
+}
+.header_logo .logo {
+    width: 200px;
+    height: 80px;
+    border-radius: 5px; 
+}   
+.container-fluid{
+    margin-right: 0px;   
+    margin-top: 20px;
+}
+.container-fluid ul li a{
+    margin-left: 15px;
+}
+.container-fluid .navbar-brand
+{
+    font-weight: bold;
+    font-size: 13px;
+}
+#navbarSupportedContent {
+    font-weight: bold;
+    font-size: 13px;
+}
+#navbarSupportedContent a:hover{
+    color: red;
+    -webkit-transition: all, 0.3s;
+	-moz-transition: all, 0.3s;
+	-ms-transition: all, 0.3s;
+	-o-transition: all, 0.3s;
+	transition: all, 0.3s;
+}
+#navbarSupportedContent .dropdown-menu a{
+    width: 130px;
+}
+#navbarSupportedContent .dropdown-menu a:active{
+   background-color: white;
+}
+.navbar_nav{
+    list-style: none;
+    display: flex;
+    margin: 8px 0px 0px -30px;
+}
+.navbar_nav li a{
+    display: block;
+    padding-left: 25px; 
+}
+.dropdown-menu ul li a {
+    background-color: red;
+    width: 10px;
+}
+
+.txttk{
+    border: none;
+    border-bottom: 1px solid ; 
+    width: 220px;
+    height: 40px;
+    margin-top: 18px;
+    margin-left: -20px;
+}
+.txttk:focus{
+     outline: none;
+     border-bottom: 1px solid ; 
+}
+.btntk{
+    background: none;
+    border: none;   
+    position: relative;
+    width: 5px;
+    margin-left: -28px;
+}
+.btntk i{
+    font-size: 15px;
+    margin-top: -190px;
+}
+.btntk i:hover{
+    font-size: 20px;
+    color: red;
+    -webkit-transition: all, 0.3s;
+	-moz-transition: all, 0.3s;
+	-ms-transition: all, 0.3s;
+	-o-transition: all, 0.3s;
+	transition: all, 0.3s;
+}
+.header_login {
+    margin-top: 30px;
+}
+.header_login i{
+    color: black;
+    font-size: 18px;
+}
+.cllogin i:hover{
+    font-size: 20px;
+    color: red;
+    -webkit-transition: all, 0.3s;
+	-moz-transition: all, 0.3s;
+	-ms-transition: all, 0.3s;
+	-o-transition: all, 0.3s;
+	transition: all, 0.3s;
+}
+.cllogin span{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 15px;
+    font-weight: 100;
+    color: rgb(143, 138, 138);
+    margin-left: 10px;
+}
+.header_shop{
+    margin-top: 30px;
+}
+.clshop i{
+    color: black;
+    font-size: 18px;
+}
+.clshop i:hover{
+    color: red;
+    font-size: 20px;
+    -webkit-transition: all, 0.3s;
+	-moz-transition: all, 0.3s;
+	-ms-transition: all, 0.3s;
+	-o-transition: all, 0.3s;
+	transition: all, 0.3s;
+}
+.clshop span{
+    color: black;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+    color: rgb(143, 138, 138);
+    margin-left: 10px;
+}
+.carousel-inner{
+    width: 1280px;
+    height: 500px;
+    display: block;
+    border-bottom-right-radius: 80px;
+    border-top-left-radius: 80px;
+    margin-bottom: 15px;
+}
+/* #toggle{
+    display: none;
+    text-align: right;
+    margin-top: -80px;
+    margin-left: 100px;
+    cursor: pointer;
+} */
+.section_title{
+    margin-top: 10px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.section_title h2{
+    font-weight: 700;
+    position: relative;
+}
+.section_title h2:after {
+	position: absolute;
+	left: 0;
+	bottom: -15px;
+	right: 0;
+	height: 4px;
+	width: 80px;
+	background: black;
+	content: "";
+	margin: 0 auto;
+}
+.section_body{
+    text-align: center;
+}
+.section_body .card{
+    margin: 5px 50px 30px 50px;
+}
+.card
+{
+  cursor:pointer;
+  position:relative;
+  padding:0px 20px;
+  background:white;
+  font-size:28px;
+  border-top-right-radius:10px;
+  border-bottom-left-radius:10px;
+  transition:all 1s;
+  &:after,&:before{
+    content:" ";
+    width:10px;
+    height:10px;
+    position:absolute;
+    border :0px solid #fff;
+    transition:all 1s;
+    }
+  &:after{
+    top:-1px;
+    left:-1px;
+    border-top:5px solid black;
+    border-left:5px solid black;
+  }
+  &:before{
+    bottom:-1px;
+    right:-1px;
+    border-bottom:5px solid black;
+    border-right:5px solid black;
+  }
+  &:hover{
+    border-top-right-radius:0px;
+    border-bottom-left-radius:0px;
+    background:rgba(246, 242, 242, 0.5);
+    color:black;
+    &:before,&:after{
+      
+      width:100%;
+      height:100%;
+    border-color:rgb(26, 22, 22);
+    }
+  }
+}
+.card-container{
+    background:#ffebee;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.card .btn{
+    position: relative;
+    z-index: 10;
+}
+.card img{
+    margin-left: -20px;
+    height: 380px;
+    width: 286px;
+   position: static;
+   
+}
+.card-body{
+    font-size: 15px;
+}
+.card-text{
+    margin-left: -169px;
+    color: red;
+}
+.card-title{
+    margin-left: -120px;
+}
+.card-body a{
+    background-color:rgb(221, 218, 218);
+    color:black;
+    border-color:rgb(211, 200, 200);
+    float: right;
+    margin-top: -50px;
+    border-radius: 50%;
+}
+.card-body a:active{
+    background-color: black;
+}
+.card-body a:hover{
+    background-color: black;
+    color:white
+}
+.card-body .btn.btn-primary:active{
+    background-color:black;
+} 
+footer{
+    background-color:rgb(162, 159, 159);
+    padding-top: 70px;
+    padding-bottom: 0px;
+}
+
+footer-address{
+    margin-bottom: 30px;
+}
+.footer-address ul li{
+    font-size: 16px;
+    line-height: 36px;
+    list-style: none;
+    color:#1c1c1c;
+}
+.footer-logo{
+    margin-bottom: 15px;
+}
+.footer-logo a{
+    display: block;
+}
+.footer-logo img{
+    width: 180px;
+    height: 60px;
+    border-radius: 5px;
+    margin-left: 33px;
+}
+.footer-about{
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+.footer-about h6{
+    margin-left: 30px;
+    font-weight: 800px;
+    margin-bottom: 10px;
+    color: #1c1c1c;
+}
+.footer-about ul li{
+    list-style: none;
+}
+.footer-about ul li a{
+    text-decoration: none;
+    color:black;
+    font-size: 14px;
+    line-height: 32px;
+}
+.footer-last h6{
+    font-weight: 800px;
+    color: #1c1c1c;
+    margin-bottom: 10px;
+}
+.footer-last p {
+	font-size: 14px;
+	color: #1c1c1c;
+	margin-bottom: 30px;
+}
+.footer-last1{
+    position: relative;
+    margin-bottom: 30px;
+}
+.footer-last1 input{
+    width: 100%;
+	font-size: 16px;
+	padding-left: 20px;
+	color: #1c1c1c;
+	height: 46px;
+	border: 1px solid #ededed;
+}
+.footer-last1 input ::placeholder{
+    color: #1c1c1c;
+}
+.footer-last1 button{
+    position: absolute;
+	right: 0;
+	top: 0;
+	padding: 0 26px;
+	height: 100%;
+    background-color: #1c1c1c;
+}
+.footer-last1 button span{
+    color: white;
+}
+.footer-last2 a {
+    display: inline-block;
+	height: 41px;
+	width: 41px;
+	font-size: 16px;
+	color: #404040;
+	border: 1px solid #ededed;
+	border-radius: 50%;
+	line-height: 38px;
+	text-align: center;
+	background: #ffffff;
+	-webkit-transition: all, 0.3s;
+	-moz-transition: all, 0.3s;
+	-ms-transition: all, 0.3s;
+	-o-transition: all, 0.3s;
+	transition: all, 0.3s;
+	margin-right: 10px;
+}
+.footer-last2 a:hover{
+    background-color: black;
+    color: white;
+    border-color: white ;
+}
+.footer-copyright{
+    border-top: 1px solid #ebebeb;
+	padding: 15px 0;
+	overflow: hidden;
+	margin-top: 20px;
+    text-align: center;
+}
+.footer-copyright p{
+    font-size: 14px;
+	color: #0b0909;
+	line-height: 25px;
+}
+/*--------------------------------------------------------- thongtinsanpham1---------------------------- */
+#carouselExampleAutoplaying {
+    margin-top: 20px;
+}
+#carouselExampleAutoplaying .carousel-inner {
+    height: 700px;
+}
+#carouselExampleAutoplaying-noidung{
+    margin-top: 28px;
+    margin-left: 60px;
+}
+#carouselExampleAutoplaying-noidung h5{
+    font-weight: 600;
+}
+#carouselExampleAutoplaying-noidung .giaohang{
+    background-color: rgb(253, 247, 247);
+    color: rgb(212, 4, 4);
+}
+#carouselExampleAutoplaying-noidung .giaohang .giaohang-icon i{
+    margin-top: 25px;
+}
+#carouselExampleAutoplaying-noidung .giaohang .giaohang-text{
+  margin-left: -85px;
+  margin-top: 10px;
+}
+#carouselExampleAutoplaying-noidung .giaohang .giaohang-text span{
+    font-weight: 700;
+}
+#carouselExampleAutoplaying-noidung .giaohang .giaohang-text p{
+    margin-top: -5px;
+}
+#carouselExampleAutoplaying-noidung .giamgia{
+    background-color: rgb(253, 247, 247);
+    color: rgb(212, 4, 4);
+    margin-top: 10px;
+}
+#carouselExampleAutoplaying-noidung .giamgia .giamgia-icon i{
+    margin-top: 25px;
+}
+#carouselExampleAutoplaying-noidung .giamgia .giamgia-text{
+  margin-left: -85px;
+  margin-top: 10px;
+}
+#carouselExampleAutoplaying-noidung .giamgia .giamgia-text span{
+    font-weight: 700;
+}
+#carouselExampleAutoplaying-noidung .giamgia .giamgia-text p{
+    margin-top: -5px;
+}
+
+.mau span{
+    margin-top: 20px;
+}
+.mau p{
+    margin-top: 20px;
+    background-color: black;
+    width: 50px;
+}
+.mau-btn{
+    margin-top: 10px;
+}
+.kichthuoc{
+    margin-top: 20px;
+}
+.kichthuoc-btn{
+    margin-top: 10px;
+}
+.kichthuoc-btn .btn{
+    margin-left: 15px;
+    padding: 5px 18px; 
+}
+.soluong {
+    margin-top: 20px;
+}
+.soluong-btn{
+    margin-top: 20px;
+    float: right;
+}
+.soluong-btn input{
+    width: 85px;
+    text-align: center;
+}
+.soluong-btn button{
+    border-radius: 10px;
+    width: 30px;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+}
+.themvaogiohang button {
+    
+    color: black;
+}
+.themvaogiohang{
+    margin-top: 40px;
+}
+.themvaogiohang button{
+    width: 100%;
+    background-color: white;
+}
+.themvaogiohang button:hover{
+   background-color: rgb(235, 232, 232);
+   color: black;
+}
+.muangay{
+    margin-top: 20px;
+}
+.muangay button{
+    width: 100%;
+    background-color: black;
+}
+.muangay button a{
+    text-decoration: none;
+    color:white;
+}
+/* thongtinsanpham-section */
+
+.section-title{
+    margin-top: 60px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.section-title h2{
+    font-weight: 700;
+    position: relative;
+}
+.section-title h2:after {
+	position: absolute;
+	left: 0;
+	bottom: -15px;
+	right: 0;
+	height: 4px;
+	width: 80px;
+	background: black;
+	content: "";
+	margin: 0 auto;
+}
+/* -------------------------------------------------chitiehanghoa--------------------------------------------- */
+
+.bangchitietsanpham {
+    margin-top: 10px; 
+}
+.bangchitietsanpham span{
+    font-size: 15;
+}
+.table_chitiet{
+    margin-top: 10px;
+
+}
+.table_chitiet td:first-child{
+    margin-top: 10px;
+    font-weight: 550;
+    text-align: center;
+    width: 250px;
+}
+.table_chitiet td:not(:first-child){
+    padding-left: 5px;
+}
+
+.table_chitiet td{
+    border: 1.8px groove ;
+    width: 500px;
+    font-size: 15px;
+    
+}
+/* ---------------------------------------------------fromthongtin---------------------------------------------- */
+.fromthongtin {
+    margin-top: 25px;
+}
+.diachi
+{
+    border: 1px solid;
+    border-top-left-radius: 35px;
+}
+.icon-diachi i
+{
+    margin-left: 60px;
+    margin-top: 30px;
+    font-size: x-large;
+    box-shadow: 0px 0px 0px 10px rgba(232, 231, 231, 0.5);
+    border-radius: 50%;
+}
+.email
+{
+    border: 1px solid;
+    margin-top: 20px;
+}
+.icon-email i
+{
+    margin-left: 60px;
+    margin-top: 15px;
+    font-size: x-large;
+    box-shadow: 0px 0px 0px 10px rgba(232, 231, 231, 0.5);
+    border-radius: 50%;
+}
+.sodienthoai
+{
+    border: 1px solid;
+    margin-top: 20px;
+}
+.icon-phone i
+{
+    margin-left: 60px;
+    margin-top: 15px;
+    font-size: x-large;
+    box-shadow: 0px 0px 0px 10px rgba(232, 231, 231, 0.5);
+    border-radius: 50%;
+}
+.fanpage
+{
+    border: 1px solid;
+    margin-top: 20px;
+    border-bottom-right-radius: 35px;
+}
+.icon-fanpage i
+{
+    margin-left: 60px;
+    margin-top: 30px;
+    font-size: x-large;
+    box-shadow: 0px 0px 0px 10px rgba(232, 231, 231, 0.5);
+    border-radius: 50%;
+}
+.noidung-fanpage .p_fanpage2
+{
+    margin-top: -15px;
+}
+/* -------------------------------------------------------fromlienhe--------------------------------------------------- */
+.lienhe {
+    text-align: center;
+    margin-top: 30px;
+}
+.fromlienhe{
+    margin-top: 20px;
+    border: 1px solid;
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    height: 620px;                               
+}
+.lienhe-text{
+    margin: 30px 0px 0px 20px;
+    font-size: 15px;
+}
+.lienhe-input .container-fluid{
+    width: 1000px;
+}
+.container-fluid input{
+    margin: 0px 100px 0px 100px;
+    font-weight: 1px;
+}
+.ipten-email{
+    display: flex;
+}
+.ipten-email input{
+    width: 300px;
+}
+.ipemail input{
+    margin-left: 5px;   
+}
+.ippass{
+    margin-top: 20px;
+}
+.ippass input {
+    width: 610px;
+}
+.ipsdt{
+    margin-top: 20px;
+}
+.ipsdt input {
+    width: 610px;
+}
+.ipnoidung{
+    margin-top: 20px;
+    height: 400px;
+}
+.ipnoidung input{
+    width: 610px;
+    height: 150px;
+}
+.ipnoidung ::placeholder{
+   text-align: start;
+}
+.btn-gui button{
+    margin-left: 350px;
+    margin-top: -450px;
+    width: 100px;
+    color: white;
+    background-color: black;
+    border-color: black;
+}
+.from-lienhe .error-message{
+    margin-left: 20px;
+}
+
+.btn-gui .btn.btn-outline-success:hover{
+    background-color: black;
+}
+.btn-dangki {
+   margin-left: 340px;
+}
+/*----------------------------------------- -------mesjava---------------------------- */
+.error-message{
+    margin-left: 102px;
+    color: red;
+}
+#emailErrorMessage {
+    margin-left: 6px;
+}
+.bando-text {
+    margin: 180px 5px 0px 100px;
+}
+.bando-text h3{
+    font-size: 30px;
+}
+.bando iframe{
+    margin: 100px 0px 20px 30px;
+    width: 862px;
+    border-top-left-radius: 45px;
+    border-bottom-right-radius: 45px;   
+}
+.logo-Zalo img{
+    position: fixed;
+    bottom: 80px;
+    right: 115px;
+}
+.logo-Mes img{
+    position: fixed;
+    bottom: 10px;
+    right: 112px;
+    width: 57px;
+}
+.tuade_dangki h1{
+    text-align: center;
+    margin-top: 30px;
+}
+.checkout__input {
+	margin-bottom: 24px;
+}
+
+.checkout__input p {
+	color: #1c1c1c;
+	margin-bottom: 20px;
+}
+
+.checkout__input p span {
+	color: #dd2222;
+}
+
+.checkout__input input {
+	width: 100%;
+	height: 46px;
+	border: 1px solid #ebebeb;
+	padding-left: 20px;
+	font-size: 16px;
+	color: #b2b2b2;
+	border-radius: 4px;
+}
+.btn-dangki .btn
+{
+    margin-left: 600px;
+    margin-bottom: 20px;
+    width: 90px;
+}
+.btn-dangki button{
+    width: 100px;
+    color: white;
+    background-color: black;
+    border-color: black;
+}
+.btn-dangki .btn.btn-outline-success:hover{
+    background-color: black;
+}
+.error-message2{
+    color: red;
+}
+#error-message{
+    margin-top: 10px;
+}
+/* -----------giohang--------- */
+.section_giohang{
+    width: 500px;
+    background-color: yellow;
+}
+.tuade_giohang h3{
+   text-align: center;
+}
+.table_giohang{
+    width: 100%;
+}
+.table_giohang tr td p{
+    margin-left: 20px;  
+}
+.table_giohang tr td{
+    text-align: center;
+}
+.header_giohang p{
+    font-weight: 650;
+}
+
+.body_giohang img{
+    width: 80px;
+}
+/* ----------------------------------Reponsive--------------------------------- */
+@media only screen and (min-width: 1200px){
+    .timkiem{
+        margin-left: 30px;
+    }
+    .from-lienhe{
+        margin: 0px 0px 0px 0px;
+        height: 340px;
+        width: 590px;
+    } 
+    .lienhe-input .container-fluid{
+        width: 600px;
+       
+    }
+    .container-fluid input{
+        margin: 0px 90px 0px 10px;
+        font-weight: 1px;
+    }
+    .ipten-email input{
+        width: 270px;
+    }
+    .ippass input{
+        width: 560px;
+    }
+    .ipsdt input{
+        width: 560px;
+    }
+    .ipnoidung input{
+        width: 560px;
+    }
+    .btn.btn-outline-success
+    {
+        margin-left: 250px;
+    }
+    
+    .bando-text{
+        margin-top: 120px;
+    }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+    .carousel-inner{
+        height: 370px;
+        display: block;
+        border-top-left-radius: 80px;
+    }
+    .section_body .card{
+        margin: 5px 10px 30px 5px;
+    }
+    .section_title{
+        margin-top: 90px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .navbar ul li {
+        margin-left: 5px;
+    }
+    .timkiem{
+        margin-left: -5px;
+    }
+    .btntk i{
+        margin-top: -250px;
+    }
+    .header_other{
+        margin-left: 10px; 
+    }
+    .dangnhap-giohang{
+        margin-top: 5px;
+    }
+    .timkiem{
+        margin-left: 30px;
+    }
+    .header_other input{
+        width: 150px;
+        margin-top: 30px;
+        background-color: pink;
+    }
+    .section_title h2{
+        margin-top: -80px;
+    }
+    .from-lienhe{
+        height: 340px;
+        width: 590px;
+    }  
+    .lienhe-input .container-fluid{
+        width: 600px;
+    }
+    .container-fluid input{
+        margin: 0px 90px 0px 10px;
+        font-weight: 1px;
+    }
+    .ipten-email input{
+        width: 270px;
+    }
+    .ippass input{
+        width: 560px;
+    }
+    .ipsdt input{
+        width: 560px;
+    }
+    .ipnoidung input{
+        width: 560px;
+    }
+    .btn.btn-outline-success
+    {
+        margin-left: 250px;
+    }
+    .bando-text{
+        margin-top: 120px;
+    }
+    .bando iframe{
+        margin-top: 0px;
+        width: 650px;
+    }
+    .bando {
+        margin-top: 100px;
+        height: 400px;
+        width: 700px;
+        margin-bottom: 20px;
+    }
+    .icon-diachi i
+    {
+        margin-left: 40px;
+        margin-top: 40px;
+    }
+    .noidung-diachi{
+        margin-left: -20px;
+    }
+    .icon-email i{
+        margin-left: 40px;
+        margin-top: 20px;
+    }
+    .noidung-email{
+        margin-left: -20px;
+    }
+    .icon-phone i{
+        margin-left: 40px;
+        margin-top: 20px;
+    }
+    .noidung-phone{
+        margin-left: -20px;
+    }
+    .icon-fanpage i{
+        margin-left: 40px;
+        margin-top: 20px;
+    }
+    .noidung-fanpage{
+        margin-left: -20px;
+    }
+    .btn-dangki .btn{
+        margin-left: 100px;
+    }
+    .giaohang-icon i{
+        margin-left: 10px;
+    }
+    .giaohang-text span{
+        margin-left: 35px;
+    }
+    .giaohang-text p{
+        margin-left: 35px;
+    }
+    .giamgia-icon i{
+        margin-left: 10px;
+    }
+    .giamgia-text span{
+        margin-left: 35px;
+    }
+    .giamgia-text p{
+        margin-left: 35px;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px){
+    .navbar_nav{
+       margin-left: 200px;
+       margin-top: -130px;   
+    }
+    .section_title{
+        margin-top: -210px;
+    }
+    .section_body .card{
+        margin: -60px 10px 90px 20px;
+    }
+    .timkiem{
+        margin-top: -60px;
+        margin-left: 230px;
+    } 
+    .header_login{
+        margin-left: 470px;
+        margin-top: -30px;  
+    }
+    .header_shop{
+        margin-left:600px;
+        margin-top: -30px;
+    }
+    #aothun_section_title{
+        margin-top: 20px;
+    }
+    #aosomi_section_title{
+        margin-top: 20px;
+    }
+    #aolen_section_title{
+        margin-top: 20px;
+    }
+    #body_aothun .card{
+        margin :20px 0px 10px 0px;
+    }
+    #body_aosomi .card{
+        margin :20px 0px 10px 0px;
+    }
+    #body_aolen .card{
+        margin : 20px 0px 10px 0px;
+    }
+    .icon-diachi 
+    {
+        margin-left: -20px;
+    }
+    .noidung-diachi{
+        margin-top: -40px;
+        margin-left: 90px;
+    }
+    .icon-email i{
+        margin-top: 20px;
+        margin-left: 40px;
+    }
+    .noidung-email{
+        margin-top: -40px;
+        margin-left: 90px;
+    }
+    .icon-phone i{
+        margin-top: 20px;
+        margin-left: 40px;
+    }
+    .noidung-phone{
+        margin-top: -40px;
+        margin-left: 90px;
+    }
+    .icon-fanpage i{
+        margin-top: 20px;
+        margin-left: 40px;
+    }
+    .noidung-fanpage{
+        margin-top: -40px;
+        margin-left: 90px;
+    }
+    .from-lienhe input{
+        margin-left: 50px;
+    }
+    .btn-gui .btn{
+        margin-left: 300px;
+    }
+    .fromlienhe{
+        margin-top: 50px;
+    }
+    .bando-text{
+        margin-left: 120px;
+        margin-top: 50px;
+        width: 700px;
+    }
+    .bando iframe{
+        margin-left: 100px;
+        margin-top: 50px;
+        width: 680px;
+    }
+    #emailip{
+        margin-left: 10px;
+    }
+    .ipten-email input{
+        width: 270px;
+    }
+    .ippass input{
+        width: 560px;
+    }
+    .ipsdt input{
+        width: 560px;
+    }
+    .ipnoidung input{
+        width: 560px;
+    }
+    .btn-dangki .btn{
+        margin-left: -20px;
+    }
+    .giaohang-icon i{
+        margin-left: 10px;
+    }
+    #carouselExampleAutoplaying-noidung .giaohang .giaohang-text{
+        margin-left: 40px;
+        margin-top: -30px;
+    }
+    #carouselExampleAutoplaying-noidung .giamgia .giamgia-text{
+        margin-left: 40px;
+        margin-top: -30px;
+    }
+    .giamgia-icon i{
+        margin-left: 10px;
+    }
+    #section_bodysanpham .card{
+        margin: 60px 10px 90px 20px;
+    }
+}
+@media only screen and (min-width: 576px) and (max-width: 768px){
+    /* .navbar_nav{
+        margin-left: 190px;
+        margin-top: -130px;  
+        flex-direction: column;
+        text-align: center;
+    }
+    #toggle{
+        display: block;
+    }
+    .navbar.navbar-expand{
+        display: none;
+    } */
+    .navbar_nav{
+        margin-left: 140px;
+        margin-top: -130px;   
+     }
+     .header_other{
+        margin-top: -50px;
+    }
+     .timkiem{
+        margin-left: 30px;
+    } 
+    .header_login{
+        margin-left: 270px;
+        margin-top: -30px; 
+    }
+    .header_shop{
+        margin-left:400px;
+        margin-top: -30px;
+    }
+    .section_title h2{
+        margin-top: -280px;
+    }  
+    .car-container{
+        margin-top: -200px;
+    } 
+    .section_body .card{
+        margin: -50px 40px 90px 110px;
+    }
+    #aothun_section_title{
+        margin-top: 290px;
+    }
+    #aosomi_section_title{
+        margin-top: 290px;
+    }
+    #aolen_section_title{
+        margin-top: 290px;
+    }
+    #body_aothun .card{
+        margin : 190px 0px -5px 120px;
+    }
+    #body_aosomi .card{
+        margin : 190px 0px 10px 120px;
+    }
+    #body_aolen .card{
+        margin : 190px 0px 10px 120px;
+    }
+    .icon-diachi 
+    {
+        margin-left: -20px;
+    }
+    .noidung-diachi{
+        margin-top: -40px;
+        margin-left: 90px;
+    }
+    .icon-email i{
+        margin-top: 20px;
+        margin-left: 40px;
+    }
+    .noidung-email{
+        margin-top: -40px;
+        margin-left: 90px;
+    }
+    .icon-phone i{
+        margin-top: 20px;
+        margin-left: 40px;
+    }
+    .noidung-phone{
+        margin-top: -40px;
+        margin-left: 90px;
+    }
+    .icon-fanpage i{
+        margin-top: 20px;
+        margin-left: 40px;
+    }
+    .noidung-fanpage{
+        margin-top: -40px;
+        margin-left: 90px;
+    }
+    .from-lienhe input{
+        margin-left: 10px;
+    }
+    .btn-gui .btn{
+        margin-left: 200px;
+    }
+    .fromlienhe{
+        margin-top: 50px;
+    }
+    .bando-text{
+        margin-left: 100px;
+        margin-top: 30px;
+        width: 400px;
+    }
+    .bando iframe{
+        margin-left: 100px;
+        margin-top: 50px;
+        width: 480px;
+    }
+    #emailip{
+        margin-left: 10px;
+    }
+    .ipten-email input{
+        width: 230px;
+    }
+    .ippass input{
+        width: 480px;
+    }
+    .ipsdt input{
+        width: 480px;
+    }
+    .ipnoidung input{
+        width: 480px;
+    }
+    .btn-dangki .btn{
+        margin-left: -100px;
+    }
+    .giaohang-icon i{
+        margin-left: 10px;
+    }
+    #carouselExampleAutoplaying-noidung .giaohang .giaohang-text{
+        margin-left: 40px;
+        margin-top: -30px;
+    }
+    #carouselExampleAutoplaying-noidung .giamgia .giamgia-text{
+        margin-left: 40px;
+        margin-top: -30px;
+    }
+    .giamgia-icon i{
+        margin-left: 10px;
+    }
+    #section_bodysanpham .card{
+        margin: 60px 10px 10px 120px;
+    }
+    
+}
+@media only screen and (max-width: 576px){
+    .navbar_nav{
+        margin-left: -80px;
+        margin-top: -10px;
+        margin-right: 100px;
+        padding-right: 100px;
+        /* background-color: green; */
+    }
+     .timkiem{
+        margin-top: -20px;
+        margin-left: 20px; 
+    } 
+    .txttk{
+        width: 100px;
+    }
+    .btntk i{
+        margin-left: 0px;
+    }
+    .header_other{
+        margin-right: 50px;
+    }
+    .header_login{
+        margin-left: 110px;
+        margin-top: -30px;       
+    }
+    .header_shop{
+        margin-left:220px;
+        margin-top: -30px;
+    }
+    .section_title h2{
+        margin-top: -280px;
+    }  
+    .car-container{
+        margin-top: -200px;
+    } 
+    .section_body .card{
+        margin: -50px 40px 90px 100px;
+    }
+    #aothun_section_title{
+        margin-top: 290px;
+    }
+    #aosomi_section_title{
+        margin-top: 290px;
+    }
+    #aolen_section_title{
+        margin-top: 290px;
+    }
+    #body_aothun .card{
+        margin : 190px 0px -5px 90px;
+    }
+    #body_aosomi .card{
+        margin : 190px 0px 10px 90px;
+    }
+    #body_aolen .card{
+        margin : 190px 0px 10px 90px;
+    }
+    .icon-diachi 
+    {
+        margin-left: -20px;
+    }
+    .noidung-diachi{
+        margin-top: -40px;
+        margin-left: 90px;
+    }
+    .icon-email i{
+        margin-top: 20px;
+        margin-left: 40px;
+    }
+    .noidung-email{
+        margin-top: -40px;
+        margin-left: 90px;
+    }
+    .icon-phone i{
+        margin-top: 20px;
+        margin-left: 40px;
+    }
+    .noidung-phone{
+        margin-top: -40px;
+        margin-left: 90px;
+    }
+    .icon-fanpage i{
+        margin-top: 20px;
+        margin-left: 40px;
+    }
+    .noidung-fanpage{
+        margin-top: -40px;
+        margin-left: 90px;
+    }
+    .from-lienhe input{
+        margin-left: 10px;
+    }
+    .btn-gui .btn{
+        margin-left: 180px;
+    }
+    .ipten-email input{
+        width: 200px;
+    }
+    .ippass input{
+        width: 418px;
+    }
+    .ipsdt input{
+        width: 418px;
+    }
+    .ipnoidung input{
+        width: 418px;
+    }
+    .bando-text{
+        margin-left: 50px;
+        margin-top: 60px;
+        width: 400px;
+    }
+    .bando iframe{
+        margin-left: 50px;
+        margin-top: 50px;
+        width: 380px;
+    }
+    .logo-Zalo img{
+        margin-right: -90px;
+    }
+    .logo-Mes img{
+        margin-right: -90px;
+    }
+    .btn-dangki .btn{
+        margin-left: -180px;
+    }
+    .giaohang-icon i{
+        margin-left: 10px;
+    }
+    #carouselExampleAutoplaying-noidung .giaohang .giaohang-text{
+        margin-left: 40px;
+        margin-top: -30px;
+    }
+    #carouselExampleAutoplaying-noidung .giamgia .giamgia-text{
+        margin-left: 40px;
+        margin-top: -30px;
+    }
+    .giamgia-icon i{
+        margin-left: 10px;
+    }
+    #section_bodysanpham .card{
+        margin: 60px 10px 10px 120px;
+    }
+}
